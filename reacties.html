@@ -1,0 +1,39 @@
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="head-container">
+      <header>
+        <h2>Reacties</h2>
+        <p class="reacties">
+          Praat mee over gras en laat je reactie hier achter.
+        </p>
+      </header>
+    </div>
+
+    <div class="main-container">
+      <form name="reacties" method="POST" data-netlify="true">
+        <div class="container-reacties">
+          <input type="text" name="name" placeholder="Naam bij reactie" />
+          <textarea
+            class="textareareacties"
+            placeholder="Je mening over echt of nepgras."
+            rows="8"
+            cols="100"
+          ></textarea>
+          <button type="submit">Plaats reactie</button>
+        </div>
+      </form>
+    </div>
+
+    <footer>
+      <div class="footer-container">
+        <nav>
+          <a href="index.html">Terug naar hoofdpagina</a>
+        </nav>
+      </div>
+    </footer>
+  </body>
+</html>
