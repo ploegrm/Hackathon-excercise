@@ -1,175 +1,184 @@
 body {
   margin: 0;
-}
-
-.intro {
-  height: 100vh;
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: 1fr 3fr 5fr 1fr;
-  grid-column-gap: 5px;
-  grid-row-gap: 5px;
-  grid-template-areas:
-    "header"
-    "main"
-    "section"
-    "footer";
-}
-
-header,
-main,
-footer {
-  padding: 10px;
-  color: white;
-  font-family: Arial;
-  font-weight: bold;
-}
-
-main {
-  background-color: black;
-  grid-area: main;
-  grid-column-end: span 4;
-}
-
-section {
-  grid-area: section;
-  grid-column-end: span 4;
-}
-
-footer {
-  background-color: green;
-  grid-area: footer;
-  grid-column-end: span 4;
-}
-
-footer nav a {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
-  color: beige;
+  color: antiquewhite;
 }
 
-.head-container {
-  background-color: green;
-  grid-area: header;
-  grid-column-end: span 4;
-}
-
-.main-container {
-  display: inline;
-  flex-direction: row;
-  flex-grow: 1;
-  align-self: auto;
-  align-self: flex-start;
-  max-width: 100%;
-}
-
-.section-container {
-  display: flex;
-  margin: 5px;
-  padding: 5px;
-  width: 100%;
-}
-
-.sectionleft {
-  background-color: rgb(227, 240, 187);
-  margin: 5px;
-  padding: 5px;
-  width: 70%;
-}
-
-.sectionright {
-  background-color: rgb(166, 221, 156);
-  margin: 5px;
-  padding: 5px;
-  flex-direction: column;
-  width: 30%;
-}
-
-.text-container {
-  display: flex;
-  flex-direction: row;
-  flex-grow: auto;
-  align-self: auto;
-  max-width: 80%;
-
-  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
-  border: 5px solid rgb(102, 107, 102);
-  border-radius: 25px;
-  margin: 10px auto;
-  padding: 15px;
-}
-
-.laatstereacties {
-  padding: 5px;
-  border: 5px dashed rgb(102, 107, 102);
-  border-radius: 25px;
-  margin: 5px auto;
-  display: flex;
-  flex-direction: column;
-  flex-grow: 1;
-  align-self: flex-start;
-  max-width: 70%;
-  background-color: beige;
-  font-family: "Lucida Handwriting", "Courier New", monospace;
+h1 {
+  margin: 20px;
+  padding: 25px;
 }
 
 h2,
+h3,
 p {
-  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
-  margin: 10px;
-  max-width: 100%;
-}
-
-.container-reactie {
-  display: inline;
-  flex-direction: column;
-  margin: 50px;
-  border: 5px solid rgb(102, 107, 102);
-  border-radius: 25px;
-  padding: 15px;
-}
-
-button {
-  max-width: 20%;
-  align-self: flex-end;
-  background-color: green;
-  color: beige;
-  border-style: groove;
+  margin: 20px;
 }
 
 input,
 textarea {
-  border: 2px solid rgb(21, 134, 21);
   padding: 10px;
+  border: 2px solid rgb(21, 134, 21);
+  border-radius: 25px;
 }
 
-.images {
-  margin: 50px;
+.radio-controls {
+  display: flex;
+  padding: 10px;
+  border: 2px solid rgb(21, 134, 21);
+  border-radius: 25px;
+  background-color: white;
+  color: black;
+}
+
+.head-container {
+  background-color: green;
+  max-width: 100%;
+  color: antiquewhite;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  color: darkolivegreen;
+}
+
+.content-container {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  text-align: center;
+
+  max-width: 100%;
+  margin: 10px auto;
+  padding: 15px;
+}
+
+.text-container {
   border: 5px solid rgb(102, 107, 102);
   border-radius: 25px;
+  margin: 20px;
   padding: 15px;
-  max-width: 100%;
+  background-color: black;
 }
 
-img {
+.text-container img {
+  margin: 10px;
+  padding: 15px;
   width: 300px;
   height: 200px;
   max-width: 200px;
 }
 
-@media (min-width: 1024px) {
-  .main-container,
-  .container-reactie {
-    display: flex;
+.footer-container {
+  background-color: green;
+}
+
+.reacties-content-container {
+  display: flex;
+  flex-direction: column;
+  margin: 50px;
+  padding: 15px;
+}
+
+.content-contact-container {
+  display: flex;
+  flex-direction: column;
+  margin: 50px;
+  padding: 15px;
+}
+
+button {
+  max-width: 30%;
+  align-self: flex-end;
+  background-color: green;
+  color: beige;
+  border-style: groove;
+  border-radius: 25px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+.laatstereacties {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  align-self: flex-start;
+
+  padding: 5px;
+  border: 5px dashed rgb(102, 107, 102);
+  border-radius: 25px;
+  margin: 5px auto;
+  max-width: 70%;
+  background-color: beige;
+  font-family: "Lucida Handwriting", "Courier New", monospace;
+  color: black;
+}
+
+footer nav a {
+  margin: 5px auto;
+  padding: 5px;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  color: beige;
+  font-size: 20px;
+}
+
+@media (min-width: 768px) {
+  .container {
+    width: 95%;
+    height: 95vh;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: 1fr 8fr 1fr;
+    grid-column-gap: 5px;
+    grid-row-gap: 5px;
   }
 
-  footer nav a {
-    display: inline;
-    flex-direction: row;
-    justify-content: center;
-    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
-    color: beige;
+  header {
+    display: grid;
+    margin-top: 30px;
+  }
+
+  main {
+    grid-column: 1 / 1;
+    grid-row: 2 / 3;
+  }
+
+  footer {
+    grid-column: 1 / 1;
+    grid-row: 3 / 4;
+    margin-bottom: 30px;
+  }
+
+  .content-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 5px;
+    grid-row-gap: 5px;
+  }
+
+  .reacties-content-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 5px;
+    grid-row-gap: 5px;
+  }
+
+  .content-contact-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 5px;
+    grid-row-gap: 5px;
+  }
+
+  .img-main {
+    height: 150px;
   }
 }
