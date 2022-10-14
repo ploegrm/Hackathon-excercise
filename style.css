@@ -126,6 +126,15 @@ footer nav a {
   font-size: 20px;
 }
 
+.img-main {
+  height: 150px;
+}
+
+.head-text {
+  display: flex;
+  flex-direction: row;
+}
+
 @media (min-width: 768px) {
   .container {
     width: 95%;
@@ -176,9 +185,5 @@ footer nav a {
     grid-template-rows: 1fr;
     grid-column-gap: 5px;
     grid-row-gap: 5px;
-  }
-
-  .img-main {
-    height: 150px;
   }
 }
